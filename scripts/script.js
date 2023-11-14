@@ -57,3 +57,27 @@ $(function () {
     onUp: function (e, percentage) {}
   });
 });
+
+function animation() {
+  const circles = document.querySelectorAll('.animation_img');
+
+  const animateOne = (item, i) => {
+    console.log(item);
+
+    const timeoutId = setTimeout(function () {
+      item.style.top = `${90 * i}px`;
+      item.parentNode.classList.add('finished');
+      console.log(1234);
+    }, 1000 * (circles.length - 1 - i));
+    return timeoutId;
+  };
+
+  const ids = [];
+  for (let i = circles.length - 1; i >= 0; i--) {
+    console.log(i);
+    const animId = animateOne(circles[i], i);
+    ids.push(animId);
+  }
+}
+
+animation();

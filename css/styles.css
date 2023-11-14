@@ -209,9 +209,74 @@ main {
   }
 }
 
-.main_screen .wrapper {
+.main_animation_container {
+  position: relative;
+}
+.main_animation_container .animation_img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 0.3s;
+}
+.main_animation_container .text_1 {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 1 140px;
+  color: #373144;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px; /* 190% */
+  letter-spacing: -0.4px;
+}
+@media screen and (max-width: 1300px) {
+  .main_animation_container .text_1 img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main_animation_container .animation_img img {
+    width: 150px;
+  }
+}
+.main_animation_container .text_2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #373144;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px; /* 190% */
+  letter-spacing: -0.4px;
+  flex: 0 1 140px;
+}
+@media screen and (max-width: 1300px) {
+  .main_animation_container .text_2 img {
+    width: 130px;
+  }
+}
+.main_animation_container .animation_row {
+  height: 90px;
+  opacity: 0;
+  transition: 0.5s;
+  display: flex;
+  justify-content: space-between;
+}
+.main_animation_container .animation_row.finished {
+  opacity: 1;
+}
+.main_animation_container .animation_row.finished + .animation_row {
+  opacity: 1;
+}
+
+.main_screen .wrapper {
+  display: flex;
+  align-items: stretch;
 }
 @media screen and (max-width: 700px) {
   .main_screen .wrapper {
@@ -267,6 +332,24 @@ main {
 @media screen and (max-width: 700px) {
   .main_screen .left_part {
     padding: 60px 0;
+  }
+}
+.main_screen .right_part {
+  margin: 0 auto;
+  flex: 0 0 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+@media screen and (max-width: 1300px) {
+  .main_screen .right_part {
+    flex: 0 0 450px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .main_screen .right_part {
+    display: none;
   }
 }
 

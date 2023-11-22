@@ -4,6 +4,24 @@ $(function () {
     $('body').toggleClass('_lock');
   });
 
+  $('._case_slider').slick({
+    infinite: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 1000,
+    arrows: true,
+    variableWidth: true,
+    prevArrow: $('.arrows_slider>.prev'),
+    nextArrow: $('.arrows_slider>.next'),
+    responsive: [
+      {
+        breakpoint: 850,
+        settings: {
+          variableWidth: false
+        }
+      }
+    ]
+  });
   $('.services_slider').slick({
     infinite: false,
     slidesToShow: 1,
@@ -19,7 +37,7 @@ $(function () {
   });
 
   $('.slider_results_body').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 3,
     centerMode: true,
     centerPadding: '0px',

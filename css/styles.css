@@ -1197,9 +1197,16 @@ main {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+  .brands_block .slider_item img {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+@media screen and (max-width: 800px) {
   .brands_block .slider_item {
     box-shadow: none;
+    padding: 20px;
+    gap: 20px;
   }
 }
 .brands_block .slick-current {

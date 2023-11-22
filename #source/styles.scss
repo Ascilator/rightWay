@@ -1175,10 +1175,15 @@ main {
     img {
       flex: 0 1 calc(20% - 100px);
       object-fit: contain;
+      @media screen and (max-width: 800px) {
+        flex: 0 1 calc(50% - 20px);
+      }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 800px) {
       box-shadow: none;
+      padding: 20px;
+      gap: 20px;
     }
   }
 

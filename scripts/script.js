@@ -74,6 +74,18 @@ $(function () {
     onMove: function (e, percentage) {},
     onUp: function (e, percentage) {}
   });
+  const slider2 = new RangeSlider($('.allax2'), {
+    fgColour: '#925AFF', // Foreground colour
+    bgColour: '#D2C5FC', // Background colour
+
+    // Starting position
+    percentage: 20,
+
+    // Events - will run on touch & mouse triggers
+    onDown: function (e, percentage) {},
+    onMove: function (e, percentage) {},
+    onUp: function (e, percentage) {}
+  });
 });
 
 function animation() {

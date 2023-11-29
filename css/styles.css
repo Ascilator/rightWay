@@ -2435,3 +2435,116 @@ main {
   letter-spacing: -0.48px;
   margin-top: 42px;
 }
+
+.sale_cards_container {
+  margin-top: 60px;
+}
+.sale_cards_container .header_wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+@media screen and (max-width: 1000px) {
+  .sale_cards_container .header_wrapper {
+    display: block;
+  }
+}
+.sale_cards_container .load_more {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.sale_cards_container .sale_card {
+  flex: 0 1 calc(50% - 9px);
+  border-radius: 32px;
+  border: 1px dotted #373144;
+  overflow: hidden;
+  position: relative;
+}
+.sale_cards_container .sale_card .donut {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  .sale_cards_container .sale_card .donut img {
+    width: 200px;
+  }
+}
+.sale_cards_container .sale_card._purple {
+  background: #925aff;
+}
+.sale_cards_container .sale_card._purple .card_header {
+  border-bottom: 1px dotted #fff;
+}
+.sale_cards_container .sale_card._purple .sales .item p {
+  color: #fff;
+}
+.sale_cards_container .sale_card._purple .card_desc {
+  color: #fff;
+}
+.sale_cards_container .sale_card._purple .purple_btn {
+  border: 1px dotted #fff;
+}
+@media screen and (max-width: 1000px) {
+  .sale_cards_container .sale_card {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sale_cards_container .sale_card {
+    padding-bottom: 40px;
+  }
+}
+.sale_cards_container .card_header {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  border-bottom: 1px dotted #373144;
+}
+.sale_cards_container .card_body {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.sale_cards_container .card_body .sales {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.sale_cards_container .card_body .sales .item p {
+  color: #373144;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.48px;
+}
+.sale_cards_container .card_body .sales .item p:first-child {
+  font-size: 65px;
+  font-weight: 600;
+  line-height: 84px; /* 129.231% */
+  margin-bottom: 12px;
+}
+@media screen and (max-width: 600px) {
+  .sale_cards_container .card_body .sales {
+    display: block;
+  }
+}
+.sale_cards_container .card_body .card_desc {
+  color: #373144;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 38px; /* 190% */
+  letter-spacing: -0.4px;
+  margin-top: 70px;
+}
+@media screen and (max-width: 1000px) {
+  .sale_cards_container .card_body {
+    padding: 40px 20px;
+  }
+}
+.sale_cards_container .purple_btn {
+  margin-top: 30px;
+}

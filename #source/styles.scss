@@ -2393,3 +2393,115 @@ main {
     margin-top: 42px;
   }
 }
+
+.sale_cards_container {
+  margin-top: 60px;
+  .header_wrapper {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 18px;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+  }
+  .load_more {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .sale_card {
+    flex: 0 1 calc(50% - 9px);
+    border-radius: 32px;
+    border: 1px dotted #373144;
+    overflow: hidden;
+    position: relative;
+    .donut {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @media screen and (max-width: 600px) {
+        img {
+          width: 200px;
+        }
+      }
+    }
+    &._purple {
+      background: #925aff;
+      .card_header {
+        border-bottom: 1px dotted #fff;
+      }
+      .sales {
+        .item p {
+          color: #fff;
+        }
+      }
+
+      .card_desc {
+        color: #fff;
+      }
+      .purple_btn {
+        border: 1px dotted #fff;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      margin-bottom: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding-bottom: 40px;
+    }
+  }
+  .card_header {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    border-bottom: 1px dotted #373144;
+  }
+  .card_body {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 40px 0;
+    .sales {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .item {
+        p {
+          color: #373144;
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 36px; /* 150% */
+          letter-spacing: -0.48px;
+          &:first-child {
+            font-size: 65px;
+            font-weight: 600;
+            line-height: 84px; /* 129.231% */
+            margin-bottom: 12px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+    }
+    .card_desc {
+      color: #373144;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 38px; /* 190% */
+      letter-spacing: -0.4px;
+      margin-top: 70px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      padding: 40px 20px;
+    }
+  }
+  .purple_btn {
+    margin-top: 30px;
+  }
+}

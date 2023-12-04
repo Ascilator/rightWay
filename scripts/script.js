@@ -71,9 +71,24 @@ $(function () {
 
     // Events - will run on touch & mouse triggers
     onDown: function (e, percentage) {},
-    onMove: function (e, percentage) {},
+    onMove: function (e, percentage) {
+      const people = Math.ceil(percentage * 100000 * 0.01);
+      const priceForOne = 1;
+      let priceOfProducts = 0;
+      document.querySelectorAll('._product').forEach(el => {
+        const price = el.getAttribute('price');
+        const value = el.querySelector('input').checked;
+        if (value) {
+          priceOfProducts += Number(price);
+        }
+      });
+
+      const summ = Math.ceil(people * priceForOne + Number(priceOfProducts));
+      $('#price').text(summ + ' руб./мес');
+    },
     onUp: function (e, percentage) {}
   });
+
   const slider2 = new RangeSlider($('.allax2'), {
     fgColour: '#925AFF', // Foreground colour
     bgColour: '#D2C5FC', // Background colour

@@ -5,7 +5,7 @@ $(function () {
   });
 
   $('._case_slider').slick({
-    infinite: false,
+    infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 1000,
@@ -22,6 +22,24 @@ $(function () {
       }
     ]
   });
+
+  $('.team_slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    speed: 1000,
+    arrows: true,
+    prevArrow: $('.team_prev'),
+    nextArrow: $('.team_next'),
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+
   $('.services_slider').slick({
     infinite: false,
     slidesToShow: 1,
@@ -44,6 +62,8 @@ $(function () {
     slidesToScroll: 1,
     speed: 1000,
     arrows: false,
+    dots: true,
+    appendDots: $('.slider_results_dots'),
     responsive: [
       {
         breakpoint: 1000,
@@ -126,3 +146,15 @@ function animation() {
 }
 
 animation();
+
+//  $('.problem_item').click(function () {
+//    $('.cheap_container')
+//      .not($('.cheap_container').eq($(this).index()))
+//      .hide();
+//    $('.problem_item')
+//      .not($('.cheap_container').eq($(this).index()))
+//      .removeClass('_active');
+
+//    $('.problem_item').eq($(this).index()).addClass('_active');
+//    $('.cheap_container').eq($(this).index()).fadeIn();
+//  });

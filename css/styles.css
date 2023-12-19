@@ -493,12 +493,15 @@ main {
   }
 }
 
-.all_tools .block_title {
+.all_tools .header_part {
+  display: flex;
+  align-items: flex-end;
   margin-bottom: 60px;
 }
 @media screen and (max-width: 600px) {
-  .all_tools .block_title {
+  .all_tools .header_part {
     margin-bottom: 30px;
+    display: block;
   }
 }
 .all_tools .content_box {
@@ -538,6 +541,12 @@ main {
   font-weight: 500;
   line-height: 35px;
   letter-spacing: -0.56px;
+  height: 70px;
+}
+@media screen and (max-width: 700px) {
+  .all_tools .content_item .item_title {
+    height: auto;
+  }
 }
 .all_tools .content_item p {
   color: #373144;
@@ -777,6 +786,9 @@ main {
 .cases {
   overflow: hidden;
 }
+.cases .slick-list {
+  overflow: visible;
+}
 .cases .arrows_slider {
   display: flex;
   align-items: center;
@@ -788,6 +800,10 @@ main {
 }
 .cases .arrows_slider .slick-arrow {
   cursor: pointer;
+  transition: 0.3s;
+}
+.cases .arrows_slider .slick-arrow:hover {
+  opacity: 0.7;
 }
 .cases .arrows_slider .prev {
   transform: scale(-1, 1);
@@ -861,7 +877,7 @@ main {
   margin-right: 30px;
   padding: 52px;
   fill: #fff;
-  box-shadow: 5px 4px 14px rgba(210, 197, 252, 0.5);
+  box-shadow: 0px 0px 20px rgba(210, 197, 252, 0.5);
   flex: 0 0 770px;
   margin-top: 40px;
   border-radius: 35px;
@@ -1145,13 +1161,18 @@ main {
 .calculate_price .purple_section {
   border-radius: 32px;
   background: #925aff;
-  flex: 0 1 calc(50% - 10px);
   padding: 32px 0 24px 56px;
   color: #fff;
   font-size: 50px;
-  font-weight: 400;
   line-height: 80px; /* 123.077% */
   letter-spacing: -1.3px;
+}
+.calculate_price .purple_section h4 {
+  font-family: Inter;
+  font-weight: 400;
+}
+.calculate_price .purple_section span {
+  font-size: 24px;
 }
 @media screen and (max-width: 900px) {
   .calculate_price .purple_section {
@@ -1162,6 +1183,16 @@ main {
   .calculate_price .purple_section {
     font-size: 30px;
   }
+}
+.calculate_price .lbock {
+  flex: 0 1 calc(50% - 10px);
+}
+.calculate_price .price_for_one {
+  color: #373144;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  padding: 20px 30px;
 }
 .calculate_price .gray_text {
   padding: 0 55px;
@@ -1366,7 +1397,8 @@ main {
   font-weight: 500;
   line-height: 35px; /* 125% */
   letter-spacing: -0.56px;
-  margin-bottom: 55px;
+  margin-bottom: 20px;
+  height: 70px;
 }
 .benefits .header_wrapper .benefit_item p {
   font-size: 16px;

@@ -104,7 +104,7 @@ $(function () {
       });
 
       const summ = Math.ceil(people * priceForOne + Number(priceOfProducts));
-      $('#price').text(summ + ' руб./мес');
+      $('#price').html(summ + '<span> руб./мес</span>');
     },
     onUp: function (e, percentage) {}
   });

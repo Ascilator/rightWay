@@ -147,6 +147,23 @@ function animation() {
 
 animation();
 
+function gallery() {
+  document.querySelectorAll('.slider_item_gallery').forEach(el => {
+    el.addEventListener('click', function () {
+      console.log(this);
+      document.querySelector('.gallery_container').classList.add('_active');
+      document.querySelector('.gallery_container').innerHTML = this.cloneNode().outerHTML;
+    });
+  });
+
+  document.querySelector('.gallery_container').addEventListener('click', function () {
+    this.classList.remove('_active');
+    document.querySelector('.gallery_container').innerHTML = '';
+  });
+}
+
+gallery();
+
 //  $('.problem_item').click(function () {
 //    $('.cheap_container')
 //      .not($('.cheap_container').eq($(this).index()))

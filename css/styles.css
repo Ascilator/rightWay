@@ -1383,7 +1383,7 @@ main {
   display: flex;
   justify-content: space-around;
   gap: 20px;
-  animation: scroll 5s infinite linear;
+  animation: scroll 10s infinite linear;
 }
 .clients .row .header_wrapper .img {
   flex: 0 0 25%;

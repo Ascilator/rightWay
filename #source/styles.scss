@@ -2404,6 +2404,9 @@ main {
         }
       }
     }
+    &:last-child {
+      border-bottom: 1px dotted #373144;
+    }
     @media screen and (max-width: 900px) {
       padding: 20px 30px;
     }

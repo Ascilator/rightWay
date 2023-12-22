@@ -2417,6 +2417,9 @@ main {
     line-height: 26px;
   }
 }
+.situation .row:last-child {
+  border-bottom: 1px dotted #373144;
+}
 @media screen and (max-width: 900px) {
   .situation .row {
     padding: 20px 30px;

@@ -2423,6 +2423,7 @@ main {
 
 .loyalty_programm {
   margin-top: 40px;
+  margin-bottom: 40px;
   .wrapper {
   }
   .block_title {
@@ -2584,6 +2585,9 @@ main {
         line-height: 34px; /* 141.667% */
         letter-spacing: -0.48px;
       }
+    }
+    &:last-child {
+      border-bottom: 1px dotted #373144;
     }
     @media screen and (max-width: 900px) {
       padding: 20px 30px;

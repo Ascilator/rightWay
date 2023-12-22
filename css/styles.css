@@ -1374,7 +1374,7 @@ main {
   overflow: hidden;
 }
 .clients .row._reverse .header_wrapper {
-  animation: scroll_reverse 5s infinite linear;
+  animation: scroll_reverse 10s infinite linear;
 }
 .clients .row._reverse .header_wrapper .img {
   flex: 0 0 33.333%;

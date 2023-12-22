@@ -3243,6 +3243,58 @@ main {
   color: #925aff;
   text-decoration: underline;
 }
+.ypur_clients .header_wrapper .content_item .title_item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover {
+  position: relative;
+  margin-left: 5px;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover .hover_icon:hover + .purple_tick {
+  opacity: 1;
+  visibility: visible;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover .purple_tick {
+  width: 700px;
+  padding: 40px 55px;
+  position: absolute;
+  bottom: 140%;
+  left: -130px;
+  border-radius: 32px;
+  background: #925aff;
+  opacity: 0;
+  visibility: hidden;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover .purple_tick p {
+  margin-bottom: 24px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 38px; /* 190% */
+  letter-spacing: -0.4px;
+  margin-bottom: 24px;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover .purple_tick a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  text-decoration: underline;
+}
+.ypur_clients .header_wrapper .content_item .title_item .hover .purple_tick::after {
+  content: "";
+  top: 100%;
+  left: 20%;
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
+          clip-path: polygon(0 0, 100% 0, 50% 100%);
+  background: #925aff;
+}
 .ypur_clients .header_wrapper .content_item .title {
   color: #373144;
   font-size: 28px;

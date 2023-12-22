@@ -2688,7 +2688,7 @@ main {
   }
   .form_title {
     margin-bottom: 42px;
-    color: #fff;
+    color: #373737;
     font-size: 58px;
     font-weight: 600;
     line-height: 62px; /* 106.897% */
@@ -2700,7 +2700,7 @@ main {
     }
   }
   .form_desc {
-    color: #fff;
+    color: #373737;
     font-size: 24px;
     font-weight: 600;
     line-height: 34px; /* 141.667% */
@@ -2713,7 +2713,7 @@ main {
       flex: 0 1 533px;
       background: #0000;
       border-radius: 32px;
-      border: 1px dashed #fff;
+      border: 1px dashed #373737;
       padding: 5px 33px;
       color: #c1bef0;
       font-size: 20px;
@@ -2750,7 +2750,7 @@ main {
     border-radius: 20px;
     background: #fff;
     color: #373144;
-
+    margin-top: 40px;
     @media screen and (max-width: 1000px) {
       flex: 0 1 200px;
     }
@@ -2771,7 +2771,7 @@ main {
         gap: 24px;
         cursor: pointer;
         span {
-          color: #fff;
+          color: #373737;
           font-size: 20px;
           font-weight: 400;
           line-height: 38px; /* 190% */
@@ -2787,7 +2787,7 @@ main {
       .icon {
         width: 36px;
         height: 36px;
-        border: 1px solid #fff;
+        border: 1px solid #373737;
         border-radius: 10px;
         overflow: hidden;
         svg {
@@ -2809,7 +2809,7 @@ main {
     }
     .desc {
       margin-top: 20px;
-      color: #fff;
+      color: #373737;
       font-size: 16px;
       font-style: normal;
       font-weight: 400;

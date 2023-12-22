@@ -1828,9 +1828,11 @@ main {
   font-weight: 400;
   line-height: 22px; /* 157.143% */
 }
+.footer .afterfooter span .pup {
+  color: #925aff;
+}
 .footer .afterfooter span:last-child {
   margin-left: auto;
-  opacity: 0.3;
 }
 .footer .afterfooter a {
   color: #fff;

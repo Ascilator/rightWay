@@ -1541,6 +1541,12 @@ main {
   border: 1px dashed #000;
   background: #fff;
   padding: 5px 22px;
+  transition: 0.3s;
+}
+.brands_block .tags_cont .tags:hover {
+  background: #373144;
+  border: 1px solid #373144;
+  color: #fff;
 }
 .brands_block .tags_cont .tags:first-child {
   background: #373144;

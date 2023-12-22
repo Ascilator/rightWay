@@ -1531,6 +1531,12 @@ main {
       border: 1px dashed #000;
       background: #fff;
       padding: 5px 22px;
+      transition: 0.3s;
+      &:hover {
+        background: #373144;
+        border: 1px solid #373144;
+        color: #fff;
+      }
       &:first-child {
         background: #373144;
         border: none;

@@ -1792,6 +1792,9 @@ main {
   gap: 60px;
   margin-bottom: 60px;
 }
+.footer .footer_menu .last_col {
+  margin-left: auto;
+}
 .footer .footer_menu .col .col_header {
   color: #fff;
   font-size: 20px;

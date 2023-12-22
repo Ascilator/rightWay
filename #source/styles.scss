@@ -1786,6 +1786,9 @@ main {
     display: flex;
     gap: 60px;
     margin-bottom: 60px;
+    .last_col {
+      margin-left: auto;
+    }
     .col {
       .col_header {
         color: #fff;

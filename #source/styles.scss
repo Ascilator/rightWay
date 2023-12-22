@@ -1638,7 +1638,7 @@ main {
   .content_box {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
     input {
       border-radius: 32px;
       border: 1px dashed #000;
@@ -1741,6 +1741,7 @@ main {
   }
   .left_part {
     flex: 0 1 583px;
+    padding-bottom: 60px;
   }
   .right_part {
     margin-right: -40px;

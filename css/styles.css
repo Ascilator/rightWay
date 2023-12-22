@@ -1643,7 +1643,7 @@ main {
 .form_block .content_box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 .form_block .content_box input {
   border-radius: 32px;
@@ -1745,6 +1745,7 @@ main {
 }
 .form_block .left_part {
   flex: 0 1 583px;
+  padding-bottom: 60px;
 }
 .form_block .right_part {
   margin-right: -40px;

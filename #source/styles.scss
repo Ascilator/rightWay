@@ -2912,6 +2912,45 @@ main {
     border: 1px dotted #373144;
     overflow: hidden;
     position: relative;
+    transition: 0.3s;
+    &:hover {
+      background: #925aff;
+      .card_header {
+        border-bottom: 1px dotted #fff;
+      }
+      .sales {
+        .item p {
+          color: #fff;
+        }
+      }
+
+      .card_desc {
+        color: #fff;
+      }
+      .purple_btn {
+        border: 1px dotted #fff;
+      }
+      .card_header {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+      .donut {
+        img {
+          &:first-child {
+            display: none;
+          }
+          &:last-child {
+            display: block;
+          }
+        }
+      }
+    }
     .tab_header {
       display: inline-block;
       margin-bottom: 20px;
@@ -2920,6 +2959,11 @@ main {
       position: absolute;
       bottom: 0;
       right: 0;
+      img {
+        &:last-child {
+          display: none;
+        }
+      }
 
       @media screen and (max-width: 600px) {
         img {
@@ -2958,6 +3002,12 @@ main {
     justify-content: center;
     padding: 40px 20px;
     border-bottom: 1px dotted #373144;
+    img {
+      width: 450px;
+      &:last-child {
+        display: none;
+      }
+    }
   }
   .card_body {
     max-width: 550px;

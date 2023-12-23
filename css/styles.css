@@ -2940,6 +2940,34 @@ main {
   border: 1px dotted #373144;
   overflow: hidden;
   position: relative;
+  transition: 0.3s;
+}
+.sale_cards_container .sale_card:hover {
+  background: #925aff;
+}
+.sale_cards_container .sale_card:hover .card_header {
+  border-bottom: 1px dotted #fff;
+}
+.sale_cards_container .sale_card:hover .sales .item p {
+  color: #fff;
+}
+.sale_cards_container .sale_card:hover .card_desc {
+  color: #fff;
+}
+.sale_cards_container .sale_card:hover .purple_btn {
+  border: 1px dotted #fff;
+}
+.sale_cards_container .sale_card:hover .card_header img:first-child {
+  display: none;
+}
+.sale_cards_container .sale_card:hover .card_header img:last-child {
+  display: block;
+}
+.sale_cards_container .sale_card:hover .donut img:first-child {
+  display: none;
+}
+.sale_cards_container .sale_card:hover .donut img:last-child {
+  display: block;
 }
 .sale_cards_container .sale_card .tab_header {
   display: inline-block;
@@ -2949,6 +2977,9 @@ main {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.sale_cards_container .sale_card .donut img:last-child {
+  display: none;
 }
 @media screen and (max-width: 600px) {
   .sale_cards_container .sale_card .donut img {
@@ -2985,6 +3016,12 @@ main {
   justify-content: center;
   padding: 40px 20px;
   border-bottom: 1px dotted #373144;
+}
+.sale_cards_container .card_header img {
+  width: 450px;
+}
+.sale_cards_container .card_header img:last-child {
+  display: none;
 }
 .sale_cards_container .card_body {
   max-width: 550px;

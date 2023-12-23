@@ -348,7 +348,6 @@ main {
       padding: 20px 0;
     }
     .big_logo {
-      max-width: 360px;
       margin: 0 auto;
     }
     .big_logo_2 {
@@ -1516,6 +1515,11 @@ main {
       justify-content: center;
     }
   }
+  &._four {
+    .benefit_item {
+      flex: calc(25%);
+    }
+  }
 }
 
 .brands_block {
@@ -2096,11 +2100,59 @@ main {
     }
   }
 
+  .bullet_block {
+    border-top: 1px dotted #373144;
+    border-bottom: 1px dotted #373144;
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 44px 0;
+    margin: 44px 0;
+    .item {
+      flex: 0 1 calc(50% - 12px);
+      padding-left: 15px;
+      position: relative;
+      &::after {
+        content: '';
+        top: 5px;
+        left: 0;
+        width: 5px;
+        height: 5px;
+        background: #373144;
+        display: block;
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+  }
+  h2 {
+    color: #373144;
+
+    /* 1920/H3 */
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 40px; /* 111.111% */
+    letter-spacing: -0.72px;
+    margin-bottom: 44px;
+  }
+  .prerow {
+    margin-bottom: 44px;
+    color: #373144;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px; /* 190% */
+    letter-spacing: -0.4px;
+  }
   .row {
     display: flex;
     justify-content: space-between;
-    padding: 80px 50px;
+    padding: 80px 0px;
     border-top: 1px dotted #373144;
+    &:last-child {
+      border-bottom: 1px dotted #373144;
+    }
     .left_part {
       flex: 0 0 300px;
       span {
@@ -3110,6 +3162,15 @@ main {
       }
     }
   }
+  &._dotted {
+    .content_item {
+      box-shadow: none;
+      border-radius: 32px;
+      &:first-child {
+        border: 1px dashed #373144;
+      }
+    }
+  }
   .purple_btn {
     margin-top: 60px;
   }
@@ -3281,6 +3342,55 @@ main {
         flex: 0 1 100%;
       }
     }
+  }
+}
+
+.seo_block {
+  .content_box {
+    border-radius: 32px;
+    background: #bdbcce;
+    padding: 65px 55px;
+  }
+  .title {
+    color: #373144;
+
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 62px; /* 106.897% */
+    letter-spacing: -1.16px;
+    margin-bottom: 44px;
+  }
+  .desc {
+    max-width: 750px;
+    color: #373144;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px; /* 190% */
+    letter-spacing: -0.4px;
+  }
+  .block_more {
+    color: #373144;
+    max-width: 750px;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px; /* 190% */
+    letter-spacing: -0.4px;
+    margin: 10px 0;
+    display: none;
+  }
+  .open_add_block {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+    gap: 5px;
+    cursor: pointer;
+    color: #925aff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 38px; /* 190% */
+    letter-spacing: -0.4px;
   }
 }
 
@@ -4629,4 +4739,77 @@ main {
       }
     }
   }
+}
+
+.some_platform {
+  .block_title {
+    margin-bottom: 60px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 50px;
+    border-top: 1px dotted #373144;
+    .left_part {
+      flex: 0 0 300px;
+      span {
+        color: #373144;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 40px; /* 111.111% */
+        letter-spacing: -0.72px;
+      }
+      @media screen and (max-width: 700px) {
+        margin-bottom: 20px;
+      }
+    }
+    .right_part {
+      flex: 0 1 810px;
+      .down_item {
+        max-width: 530px;
+        margin-bottom: 40px;
+        .h {
+          color: #b4b3c3;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 26px; /* 162.5% */
+          margin-bottom: 15px;
+        }
+        .name {
+          color: #373144;
+          padding-bottom: 15px;
+          border-bottom: 1px dotted #373144;
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 38px; /* 190% */
+          letter-spacing: -0.4px;
+          display: flex;
+          gap: 10px;
+        }
+      }
+    }
+    &:last-child {
+      border-bottom: 1px dotted #373144;
+    }
+    @media screen and (max-width: 900px) {
+      padding: 20px 30px;
+    }
+
+    @media screen and (max-width: 700px) {
+      display: block;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 20px 0;
+    }
+  }
+}
+
+.header_wrapper {
+}
+.left_part {
+}
+.right_part {
+}
+.purple_btn {
 }

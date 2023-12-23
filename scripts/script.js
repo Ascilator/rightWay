@@ -162,6 +162,10 @@ function gallery() {
   });
 }
 
+$('.open_add_block').click(function () {
+  $(this).siblings('.block_more').slideToggle();
+});
+
 gallery();
 
 //  $('.problem_item').click(function () {

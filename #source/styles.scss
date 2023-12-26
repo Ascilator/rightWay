@@ -129,7 +129,6 @@ main {
   .menu {
     font-size: 16px;
     font-weight: 400;
-    text-transform: capitalize;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -1536,12 +1535,13 @@ main {
       background: #fff;
       padding: 5px 22px;
       transition: 0.3s;
+      cursor: pointer;
       &:hover {
         background: #373144;
         border: 1px solid #373144;
         color: #fff;
       }
-      &:first-child {
+      &._active {
         background: #373144;
         border: none;
         color: #fff;
@@ -2106,6 +2106,7 @@ main {
     display: flex;
     align-items: stretch;
     gap: 24px;
+    row-gap: 60px;
     flex-wrap: wrap;
     padding: 44px 0;
     margin: 44px 0;
@@ -2150,8 +2151,9 @@ main {
     justify-content: space-between;
     padding: 80px 0px;
     border-top: 1px dotted #373144;
-    &:last-child {
+    &._last {
       border-bottom: 1px dotted #373144;
+      margin-bottom: 80px;
     }
     .left_part {
       flex: 0 0 300px;
@@ -2474,9 +2476,12 @@ main {
 }
 
 .loyalty_programm {
-  margin-top: 40px;
+  margin-top: 120px;
   margin-bottom: 40px;
   .wrapper {
+    &:nth-child(4) {
+      margin-top: 120px;
+    }
   }
   .block_title {
     margin-bottom: 60px;
@@ -2656,6 +2661,7 @@ main {
 }
 
 .why_our_loyalty_programm {
+  margin-top: 80px;
   .block_title {
     margin-bottom: 72px;
     color: #925aff;
@@ -3782,6 +3788,7 @@ video {
 
 .our_clients {
   margin-bottom: 120px;
+  overflow: hidden;
   .wrapper {
   }
   .block_title {
@@ -3822,12 +3829,17 @@ video {
     border: 1px dotted #373144;
     border-left: none;
     border-right: none;
+
     .wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
       overflow: auto;
       gap: 40px;
+      animation: scroll 10s infinite linear;
+      &._reverse {
+        animation: scroll_reverse 10s infinite linear;
+      }
     }
 
     @media screen and (max-width: 600px) {

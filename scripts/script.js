@@ -179,3 +179,18 @@ gallery();
 //    $('.problem_item').eq($(this).index()).addClass('_active');
 //    $('.cheap_container').eq($(this).index()).fadeIn();
 //  });
+
+$('.tab_interactive_body').not($('.tab_interactive_body').eq(0)).hide();
+
+$('.tab_header_item').click(function () {
+  $('.brand_slider').slick('refresh');
+  $('.tab_interactive_body')
+    .not($('.tab_interactive_body').eq($(this).index()))
+    .hide();
+  $('.tab_header_item')
+    .not($('.tab_interactive_body').eq($(this).index()))
+    .removeClass('_active');
+
+  $('.tab_header_item').eq($(this).index()).addClass('_active');
+  $('.tab_interactive_body').eq($(this).index()).fadeIn();
+});

@@ -1085,6 +1085,19 @@ main {
     flex: 0 1 100%;
   }
 }
+.calculate_price .range_block {
+  position: relative;
+}
+.calculate_price .range_block .text {
+  color: #373144;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  position: absolute;
+  top: 44px;
+  right: 44px;
+  width: 270px;
+}
 .calculate_price .range_block p {
   color: #373144;
   font-size: 36px;
@@ -1256,6 +1269,28 @@ main {
   background: #925aff;
   padding: 32px 31px;
   width: 100%;
+  display: flex;
+  align-items: stretch;
+  gap: 90px;
+}
+.calculate_price .purple_section_wide .text {
+  flex: 0 1 600px;
+}
+.calculate_price .purple_section_wide .not_text {
+  flex: 0 1 631px;
+}
+.calculate_price .purple_section_wide .purple_btn {
+  color: #373144;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  background: #fff;
+  margin-top: 35px;
+  transition: 0.3s;
+}
+.calculate_price .purple_section_wide .purple_btn:hover {
+  background: #373144;
+  color: #fff;
 }
 .calculate_price .purple_section_wide .preheader {
   display: flex;
@@ -1314,18 +1349,35 @@ main {
   background: #fff;
   content: "";
 }
-.calculate_price .purple_btn {
+.calculate_price .text_range {
+  color: #b0b0b0;
+  padding: 0 55px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+.calculate_price .text_range p {
   color: #373144;
+}
+.calculate_price .shadow_section {
+  margin: 120px 0 0;
+  padding: 55px;
+  border-radius: 32px;
+  background: #fff;
+  box-shadow: 5px 4px 13px 0px rgba(210, 197, 252, 0.5), -3px 0px 8px 0px rgba(210, 197, 252, 0.5);
+  width: 100%;
+}
+.calculate_price .shadow_section .desc {
+  color: #373144;
+  margin: 36px 0;
   font-size: 24px;
   font-weight: 600;
-  text-align: center;
-  background: #fff;
-  margin-top: 35px;
-  transition: 0.3s;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.48px;
+  max-width: 830px;
 }
-.calculate_price .purple_btn:hover {
-  background: #373144;
-  color: #fff;
+.calculate_price .shadow_section .purple_btn {
+  font-size: 28px;
 }
 @media screen and (max-width: 900px) {
   .calculate_price {

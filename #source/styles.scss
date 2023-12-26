@@ -1343,7 +1343,7 @@ main {
 
   img {
     width: 100% !important;
-    max-width: 1000px;
+    max-width: 1800px;
     border-radius: 20px;
   }
   &._active {
@@ -3288,6 +3288,7 @@ video {
 
 .ypur_clients {
   margin-bottom: 120px;
+  margin-top: 120px;
   .header_wrapper {
     display: flex;
     align-items: stretch;
@@ -3327,20 +3328,28 @@ video {
         .hover {
           position: relative;
           margin-left: 5px;
-          .hover_icon:hover + .purple_tick {
+          .hover_icon:hover + .purple_cont {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          .purple_cont {
+            opacity: 0;
+            visibility: hidden;
+            width: 700px;
+            position: absolute;
+            bottom: 100%;
+            left: -130px;
+            padding-bottom: 20px;
+          }
+          .purple_cont:hover {
             opacity: 1;
             visibility: visible;
           }
           .purple_tick {
-            width: 700px;
             padding: 40px 55px;
-            position: absolute;
-            bottom: 140%;
-            left: -130px;
             border-radius: 32px;
             background: #925aff;
-            opacity: 0;
-            visibility: hidden;
             p {
               margin-bottom: 24px;
               color: #fff;
@@ -3359,7 +3368,7 @@ video {
             }
             &::after {
               content: '';
-              top: 100%;
+              top: calc(100% - 20px);
               left: 20%;
               position: absolute;
               display: block;
@@ -3386,6 +3395,11 @@ video {
         font-weight: 400;
         line-height: 38px; /* 190% */
         letter-spacing: -0.4px;
+        cursor: pointer;
+        &:hover {
+          color: #925aff;
+          text-decoration: underline;
+        }
       }
       &._cdp {
         .title {

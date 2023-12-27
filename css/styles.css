@@ -2740,7 +2740,7 @@ main {
 }
 
 .why_our_loyalty_programm {
-  margin-top: 80px;
+  margin-top: 120px;
 }
 .why_our_loyalty_programm .block_title {
   margin-bottom: 72px;
@@ -2762,6 +2762,7 @@ main {
   position: relative;
   border-radius: 32px;
   margin-bottom: 70px;
+  margin-top: 0;
 }
 .why_our_loyalty_programm .purple_block .background {
   position: absolute;
@@ -3610,6 +3611,9 @@ video {
   }
 }
 
+.map_block {
+  margin-bottom: -90px;
+}
 .map_block .header_wrapper {
   display: flex;
   align-items: stretch;

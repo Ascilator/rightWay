@@ -1,7 +1,12 @@
 $(function () {
   $('.mobile_menu').click(function () {
-    $('.menu').toggleClass('_active');
+    $('.mobile_menu_body').toggleClass('_active');
     $('body').toggleClass('_lock');
+    $('.user_controls').toggleClass('_active');
+  });
+
+  $('.mobile_link_lvl_1 .title').click(function () {
+    $(this).siblings('ul').slideToggle();
   });
 
   $('._load_more_1').click(function () {
@@ -72,6 +77,15 @@ $(function () {
       speed: 1000,
       arrows: false,
       dots: true
+    });
+
+    $('.logos_slider').slick({
+      autoplay: true,
+      autoplaySpeed: 2000,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      dots: false
     });
   } else {
     $('.brand_slider').slick({

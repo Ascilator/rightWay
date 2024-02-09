@@ -350,6 +350,20 @@ h1 span {
   border-radius: 10px;
   width: 100%;
   height: 2px;
+  transition: 0.2s;
+}
+.header .mobile_menu._active .burger_mid {
+  opacity: 0;
+}
+.header .mobile_menu._active .burger_bef {
+  transform-origin: 0 50%;
+  transform: translate(0, 2px) rotate(45deg);
+  background: #000;
+}
+.header .mobile_menu._active .burger_aft {
+  background: #000;
+  transform-origin: 0 50%;
+  transform: translate(0, -1px) rotate(-45deg);
 }
 @media screen and (max-width: 1400px) {
   .header .mobile_menu {
@@ -484,6 +498,17 @@ h1 span {
 }
 .main_animation_container .animation_row.finished + .animation_row {
   opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  ._cdp_tags {
+    margin-top: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  ._cdp_tags .content_item {
+    padding: 15px !important;
+  }
 }
 
 .main_screen {
@@ -1055,7 +1080,7 @@ h1 span {
 }
 @media screen and (max-width: 1100px) {
   .purple_block {
-    margin: 50px 0;
+    margin: 50px 20px;
   }
 }
 
@@ -1314,6 +1339,11 @@ h1 span {
 .cases .case_item .case_footer a circle {
   transition: 0.3s;
 }
+@media screen and (max-width: 600px) {
+  .cases .case_item .case_footer a {
+    font-size: 16px;
+  }
+}
 .cases .case_item .case_footer a:hover circle {
   fill: #373144;
 }
@@ -1331,6 +1361,11 @@ h1 span {
     text-align: center;
   }
 }
+@media screen and (max-width: 600px) {
+  .cases .case_item .case_footer .tag {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 850px) {
   .cases .case_item {
     padding: 25px;
@@ -1346,6 +1381,9 @@ h1 span {
 .calculate_price {
   margin-top: 140px;
   overflow-x: hidden;
+}
+.calculate_price._price_calc {
+  overflow: visible;
 }
 .calculate_price .block_title {
   margin-bottom: 70px;
@@ -1656,6 +1694,11 @@ h1 span {
   line-height: 38px; /* 190% */
   letter-spacing: -0.4px;
 }
+@media screen and (max-width: 600px) {
+  .calculate_price .purple_section_wide .preheader {
+    gap: 10px;
+  }
+}
 .calculate_price .purple_section_wide h4 {
   margin: 30px 0 0;
   color: #fff;
@@ -1668,6 +1711,11 @@ h1 span {
   .calculate_price .purple_section_wide h4 {
     font-size: 32px;
     line-height: 1.4;
+  }
+}
+@media screen and (max-width: 600px) {
+  .calculate_price .purple_section_wide h4 {
+    margin: 10px 0 0;
   }
 }
 .calculate_price .purple_section_wide h5 {
@@ -2764,6 +2812,11 @@ video {
     flex: 0 1 100%;
   }
 }
+@media screen and (max-width: 600px) {
+  .big_text_block .bullet_block {
+    row-gap: 25px;
+  }
+}
 .big_text_block h2 {
   color: #373144;
   /* 1920/H3 */
@@ -2946,6 +2999,12 @@ video {
   line-height: 38px; /* 190% */
   letter-spacing: -0.4px;
   margin-bottom: 0;
+}
+@media screen and (max-width: 600px) {
+  .big_text_block .right_part .purple_text p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 @media screen and (max-width: 600px) {
   .big_text_block .right_part .purple_text {
@@ -4005,6 +4064,12 @@ video {
 .solutiion .header_wrapper .content_item:last-child .desc {
   color: #fff;
 }
+.solutiion .header_wrapper .content_item:last-child._op_last .desc {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
 @media screen and (max-width: 600px) {
   .solutiion .header_wrapper .content_item:last-child._op_last .icon {
     position: absolute;
@@ -4037,6 +4102,11 @@ video {
   gap: 25px;
   margin-top: 60px;
 }
+@media screen and (max-width: 600px) {
+  .solutiion .header_wrapper._tags {
+    margin: 60px -20px 0;
+  }
+}
 .solutiion .header_wrapper ._tag {
   display: flex;
   padding: 28px 40px;
@@ -4057,6 +4127,11 @@ video {
 @media screen and (max-width: 900px) {
   .solutiion .header_wrapper ._tag {
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .solutiion .header_wrapper ._tag {
+    margin: 0 20px 20px;
   }
 }
 .solutiion._dotted .content_item {
@@ -4141,6 +4216,9 @@ video {
 .ypur_clients {
   margin-bottom: 120px;
   margin-top: 120px;
+}
+.ypur_clients._for_partners {
+  margin: 0 20px;
 }
 .ypur_clients ul {
   width: 100%;
@@ -5040,7 +5118,7 @@ video {
 }
 @media screen and (max-width: 800px) {
   .for_business .content_box p {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 1100px) {

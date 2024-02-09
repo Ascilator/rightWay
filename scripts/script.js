@@ -2,6 +2,7 @@ $(function () {
   $('.mobile_menu').click(function () {
     $('.mobile_menu_body').toggleClass('_active');
     $('body').toggleClass('_lock');
+    $('.mobile_menu').toggleClass('_active');
     $('.user_controls').toggleClass('_active');
   });
 
@@ -71,7 +72,7 @@ $(function () {
     });
 
     $('._slider_ben').slick({
-      infinite: false,
+      infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       speed: 1000,

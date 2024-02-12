@@ -751,7 +751,7 @@ h1 span {
 }
 @media screen and (max-width: 600px) {
   .all_tools .header_part .purple_btn {
-    width: 100%;
+    width: calc(100% - 40px);
     text-align: center;
     margin-top: 20px;
   }
@@ -1055,6 +1055,16 @@ h1 span {
   .purple_block .content_box .content_item {
     flex: 0 1 100%;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 600px) {
+  .purple_block .content_box .content_item {
+    margin: 0 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .purple_block .content_box {
+    margin: 0 -20px;
   }
 }
 .purple_block .purple_btn {
@@ -1914,9 +1924,13 @@ h1 span {
   flex: 0 0 33.333%;
 }
 @media screen and (max-width: 600px) {
+  .clients .row._reverse .header_wrapper .img {
+    flex: 1 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
   .clients .row._reverse .header_wrapper {
-    animation: none;
-    display: none;
+    display: flex;
   }
 }
 .clients .row .header_wrapper {
@@ -1934,7 +1948,7 @@ h1 span {
 }
 @media screen and (max-width: 600px) {
   .clients .row .header_wrapper .img {
-    flex: unset;
+    flex: 1 0 auto;
   }
 }
 @media screen and (max-width: 700px) {
@@ -1952,7 +1966,7 @@ h1 span {
 }
 @media screen and (max-width: 600px) {
   .clients .row .header_wrapper {
-    animation: none;
+    display: flex;
   }
 }
 .clients .row:nth-child(3) {
@@ -3967,6 +3981,12 @@ video {
 
 .solutiion {
   margin-bottom: 140px;
+}
+@media screen and (max-width: 600px) {
+  .solutiion ._center {
+    display: flex;
+    justify-content: center;
+  }
 }
 .solutiion .header_wrapper {
   display: flex;

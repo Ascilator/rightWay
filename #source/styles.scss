@@ -273,6 +273,9 @@ h1 {
     gap: 24px;
     img {
       width: 40px;
+      @media screen and (max-width: 600px) {
+        width: 30px;
+      }
     }
 
     .user_control {
@@ -503,11 +506,12 @@ h1 {
 
 ._cdp_tags {
   @media screen and (max-width: 600px) {
-    margin-top: 60px;
+    margin: 60px -20px 0;
   }
   .content_item {
     @media screen and (max-width: 600px) {
       padding: 15px !important;
+      margin: 0 20px;
     }
   }
 }
@@ -3917,6 +3921,19 @@ video {
           }
         }
         &._op {
+          .title {
+            @media screen and (max-width: 600px) {
+              margin-bottom: 150px;
+            }
+          }
+          .desc {
+            @media screen and (max-width: 600px) {
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 24px;
+            }
+          }
           .icon {
             @media screen and (max-width: 600px) {
               position: absolute;
@@ -4240,6 +4257,12 @@ video {
       }
 
       &._cdp {
+        .icon {
+          @media screen and (max-width: 600px) {
+            position: static;
+            margin-left: auto;
+          }
+        }
         .title {
           opacity: 0;
           visibility: hidden;
@@ -4248,6 +4271,14 @@ video {
           span {
             color: #925aff;
           }
+          @media screen and (max-width: 600px) {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px; /* 171.429% */
+          }
+        }
+        @media screen and (max-width: 600px) {
+          padding: 20px;
         }
       }
       @media screen and (max-width: 900px) {
@@ -4624,6 +4655,13 @@ video {
       line-height: 38px; /* 190% */
       letter-spacing: -0.4px;
       margin-bottom: 60px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: -0.36px;
+      }
     }
   }
   .purple_block {

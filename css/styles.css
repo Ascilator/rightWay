@@ -280,6 +280,11 @@ h1 span {
 .header .user_controls img {
   width: 40px;
 }
+@media screen and (max-width: 600px) {
+  .header .user_controls img {
+    width: 30px;
+  }
+}
 .header .user_controls .user_control {
   position: relative;
 }
@@ -502,12 +507,13 @@ h1 span {
 
 @media screen and (max-width: 600px) {
   ._cdp_tags {
-    margin-top: 60px;
+    margin: 60px -20px 0;
   }
 }
 @media screen and (max-width: 600px) {
   ._cdp_tags .content_item {
     padding: 15px !important;
+    margin: 0 20px;
   }
 }
 
@@ -4041,6 +4047,19 @@ video {
   }
 }
 @media screen and (max-width: 600px) {
+  .solutiion .header_wrapper .content_item:first-child._op .title {
+    margin-bottom: 150px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .solutiion .header_wrapper .content_item:first-child._op .desc {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+@media screen and (max-width: 600px) {
   .solutiion .header_wrapper .content_item:first-child._op .icon {
     position: absolute;
     transform: translate(-50%, -50%);
@@ -4375,12 +4394,30 @@ video {
     margin: 0 20px;
   }
 }
+@media screen and (max-width: 600px) {
+  .ypur_clients .header_wrapper .content_item._cdp .icon {
+    position: static;
+    margin-left: auto;
+  }
+}
 .ypur_clients .header_wrapper .content_item._cdp .title {
   opacity: 0;
   visibility: hidden;
 }
 .ypur_clients .header_wrapper .content_item._cdp .desc span {
   color: #925aff;
+}
+@media screen and (max-width: 600px) {
+  .ypur_clients .header_wrapper .content_item._cdp .desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+}
+@media screen and (max-width: 600px) {
+  .ypur_clients .header_wrapper .content_item._cdp {
+    padding: 20px;
+  }
 }
 @media screen and (max-width: 900px) {
   .ypur_clients .header_wrapper .content_item {
@@ -4787,6 +4824,14 @@ video {
   line-height: 38px; /* 190% */
   letter-spacing: -0.4px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 600px) {
+  .cooperation_options .wrapper .desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px; /* 155.556% */
+    letter-spacing: -0.36px;
+  }
 }
 .cooperation_options .purple_block {
   margin: 0;
